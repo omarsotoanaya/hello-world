@@ -1,0 +1,6 @@
+<!--<input [value]="title" (keypress) = "title = $event.target.value; onKeyPress()" />-->
+<!--Banana in a box sintax [()]-->
+<input type="text" [(ngModel)]="title" />
+<p>
+    {{title | titleCase}} 
+</p>
