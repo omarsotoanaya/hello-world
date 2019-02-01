@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormArray, FormControl } from '@angular/forms';
+import { FormGroup, FormArray, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-array-sample',
@@ -7,6 +7,20 @@ import { FormGroup, FormArray, FormControl } from '@angular/forms';
   styleUrls: ['./form-array-sample.component.css']
 })
 export class FormArraySampleComponent {
+
+  fbForm;
+
+  // Approach to make a FormBuilder.
+  constructor(fb: FormBuilder){
+    this.fbForm = fb.group({
+      name: ['',Validators.required],
+      contact: fb.group({
+        email:[],
+        phone:[]
+      }),
+      fbTopics: fb.array([])
+    });
+  }
 
   form = new FormGroup({
     topics: new FormArray([])
@@ -31,5 +45,7 @@ export class FormArraySampleComponent {
     this.topics.removeAt(index);
 
   }
+
+  
 
 }
