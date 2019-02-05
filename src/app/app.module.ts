@@ -8,11 +8,9 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCastingComponent } from './title-casting/title-casting.component';
-import { from } from 'rxjs';
 import { TitleCasePipe } from './title-case.pipe';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { FormArraySampleComponent } from './form-array-sample/form-array-sample.component';
-
 
 @NgModule({
   declarations: [
