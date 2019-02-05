@@ -9,6 +9,7 @@ import { FormGroup, FormArray, FormControl, FormBuilder, Validators } from '@ang
 export class FormArraySampleComponent {
 
   fbForm;
+  num:number = 1;
 
   // Approach to make a FormBuilder.
   constructor(fb: FormBuilder){
