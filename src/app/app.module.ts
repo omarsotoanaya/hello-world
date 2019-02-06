@@ -11,6 +11,7 @@ import { TitleCastingComponent } from './title-casting/title-casting.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { FormArraySampleComponent } from './form-array-sample/form-array-sample.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormArraySampleComponent } from './form-array-sample/form-array-sample.
     TitleCastingComponent,
     TitleCasePipe,
     SignupFormComponent,
-    FormArraySampleComponent
+    FormArraySampleComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,
